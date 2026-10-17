@@ -1,0 +1,45 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+    int heartRate;
+    float temperature, spo2;
+
+    printf("PATIENT VITAL SIGNS MONITORING SYSTEM\n");
+
+    printf("Enter heart rate (beats/min): ");
+    scanf("%d", &heartRate);
+
+    printf("Enter body temperature (C): ");
+    scanf("%f", &temperature);
+
+    printf("Enter SpO2 (%%): ");
+    scanf("%f", &spo2);
+
+    printf("\n--- Patient Readings ---\n");
+    printf("Heart Rate: %d beats/min\n", heartRate);
+    printf("Temperature: %.1f C\n", temperature);
+    printf("SpO2: %.1f%%\n", spo2);
+
+    printf("\n--- Screening Results ---\n");
+
+    if (heartRate < 60 || heartRate > 100)
+        printf("Heart rate: Outside adult resting range\n");
+    else
+        printf("Heart rate: Within adult resting range\n");
+
+    if (temperature < 36.0 || temperature > 37.5)
+        printf("Temperature: Outside example screening range\n");
+    else
+        printf("Temperature: Within example screening range\n");
+
+    if (spo2 < 95 || spo2 > 100)
+        printf("SpO2: Outside expected range\n");
+    else
+        printf("SpO2: Within expected range\n");
+
+    printf("\nScreening only. Not a medical diagnosis.\n");
+
+    return 0;
+}
