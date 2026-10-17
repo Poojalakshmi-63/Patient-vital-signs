@@ -1,0 +1,13 @@
+Algorithm
+1. Start.
+2. Declare variables heartRate, temperature, and spo2.
+3. Display the title of the program.
+4. Get the patient's heart rate.
+5. Get the patient's body temperature.
+6. Get the patient's SpO₂ level.
+7. Display all three readings.
+8. If heart rate is below 60 or above 100, display “Outside adult resting range”; otherwise, display “Within adult resting range”.
+9. If temperature is below 36.0°C or above 37.5°C, display “Outside example screening range”; otherwise, display “Within example screening range”.
+10. If SpO₂ is below 95% or above 100%, display “Outside expected range”; otherwise, display “Within expected range”.
+11. Display a message that the results are not a medical diagnosis.
+12. Stop.
